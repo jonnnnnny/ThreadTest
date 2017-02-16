@@ -21,6 +21,7 @@ public class ThreadPoolTest
 					+ ",已执行的任务数目："+ executor.getCompletedTaskCount());
 		}
 		executor.shutdown();
+		
 	}
 }
 class MyTask implements Runnable

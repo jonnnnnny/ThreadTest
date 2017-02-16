@@ -1,12 +1,15 @@
 package test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Singleton {
 
 	private static Singleton instance;
 	private Singleton() {
 		// TODO Auto-generated constructor stub
 	}
-	public static Singleton getInstance() {
+	public static  Singleton getInstance() {
 		if (instance==null) {
 			instance=new Singleton();
 		}
@@ -20,6 +23,7 @@ public class Singleton {
 		Thread run2=new Thread(new runThread());
 		run1.start();
 		run2.start();
+		
 	}
 }
 class runThread implements Runnable{
